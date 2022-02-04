@@ -21,7 +21,7 @@ body {
 }
 header{
     width: 100%;
-    height: 600px;
+    height: 450px;
     background: #1A2980;  /* fallback for old browsers */
     background: -webkit- linear-gradient(to right, #3d9e9e59, #1A2980), url(../imgs/portada.png);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #3d9e9e59, #1A2980), url(../imgs/portada.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -63,12 +63,17 @@ header .textos-header{
 
 /* About us */
 
+main {
+    background: rgb(243, 237, 237);
+}
 main .sobre-nosotros {
     padding: 30px 0 60px 0;
+    
 }
 .contenedor-sobre-nosotros{
     display: flex;
     justify-content: space-between;
+    
 }
 .contenedor-sobre-nosotros img{
     border-radius: 0;
@@ -86,7 +91,7 @@ main .sobre-nosotros {
 }
 .contenido-textos h3 span{
     background: rgb(29, 8, 106);
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     border-radius: 50%;
     display: inline-block;
     text-align: center;
@@ -105,7 +110,6 @@ main .sobre-nosotros {
     position: absolute;
     bottom: 0px;
     width: 100%;
-
 }
 /*GALERIA*/
 
@@ -138,7 +142,7 @@ main .sobre-nosotros {
     height: 100%;
     top: 0;
     transform: scale(0);
-    background: hsla(273,91%,27%,0.7);
+    background: rgba(9, 53, 197, 0.7);
     transition: transform .5s;
     display: flex;
     justify-content: center;
@@ -157,6 +161,9 @@ main .sobre-nosotros {
 }
  /* Clientes */
 
+ .usuarios-contenedor {
+    background: rgb(243, 237, 237);
+ }
  .cards {
      display: flex;
      justify-content: space-evenly;
@@ -193,8 +200,8 @@ main .sobre-nosotros {
  /* Nuestro equipo */
 
  .about-services {
-     background: #fff;
-     padding-bottom: 30px;
+    background: rgb(243, 237, 237);
+    padding-bottom: 30px;
  }
  .servicio-cont{
      display: flex;
@@ -263,7 +270,9 @@ footer {
 
 /* Formularios */
 
-.principal {
+/* formulario de contacto */
+
+.principal-contacto {
     margin: 10px 0 0 10px;
     width: 50%;
     display: block;
@@ -301,15 +310,15 @@ form {
     
 }
  
-input, textarea {
+input, textarea, select {
     width:380px;
     height:27px;
     background:#fafbfc;
     border:1px solid #0e0d0d;
     padding:10px;
     margin-top:5px;
-    font-size:10px #2255;
-    color:#ffffff;
+    font-size:10px rgb(4, 4, 4);
+    color:#0e0d0d;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
 }
  
@@ -329,6 +338,22 @@ textarea {
     border-radius: 20px;
 
 }
+
+/* formulario de reserva */
+.principal-reserva {
+    margin: 10px 0 0 10px;
+    width: 50%;
+    display: block;
+    border: solid 2px;
+    border-radius: 20px; 
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+#estadia {
+    width:38px;
+    height:27px;
+    
+}
+
 
 /* Responsive */
 
@@ -393,7 +418,9 @@ textarea {
 
     /* formularios */
 
-    .principal {
+    /* Formulario de contacto */
+
+    .principal-contacto {
        width: 90%;
     }
     .cabecera {
@@ -401,7 +428,7 @@ textarea {
         justify-content: center;
         margin-bottom: 10px;
     }
-    input, textarea, label {
+    input, textarea, label, select {
         flex-direction: column;
         justify-content: center;
         justify-content: center;
@@ -413,6 +440,19 @@ textarea {
         justify-content: center;
         align-items: center;
     }
+    /* formulario reserva */
+
+    .principal-reserva {
+        width: 70%;
+    }
+    .form-reserva .cajas {
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        margin: 0px 0 5px 10px;
+    }
+    
+    
       
 }
 
