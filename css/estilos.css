@@ -1,48 +1,60 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 body {
     font-family: 'open-sans';
 }
-.contenedor{
+
+.contenedor {
     padding: 60px 0;
     width: 90%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
 }
-.titulo{
+
+.titulo {
     color: #2a3273;
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
 }
-header{
+
+header {
     width: 100%;
     height: 450px;
-    background: #1A2980;  /* fallback for old browsers */
-    background: -webkit- linear-gradient(to right, #3d9e9e59, #1A2980), url(../imgs/portada.png);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3d9e9e59, #1A2980), url(../imgs/portada.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #1A2980;
+    /* fallback for old browsers */
+    background: -webkit- linear-gradient(to right, #3d9e9e59, #1A2980), url(../imgs/portada.png);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3d9e9e59, #1A2980), url(../imgs/portada.png);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
     position: relative;
 }
-nav{
+
+nav {
     text-align: right;
     padding: 30px 50px 0 0;
 }
-nav > a{
+
+nav>a {
     color: white;
     font-weight: 300;
     text-decoration: none;
     margin-right: 10px;
 }
-nav > a:hover{
+
+nav>a:hover {
     text-decoration: underline;
 }
-header .textos-header{
+
+header .textos-header {
     display: flex;
     height: 230px;
     width: 100%;
@@ -51,45 +63,53 @@ header .textos-header{
     flex-direction: column;
     text-align: center;
 }
-.textos-header h1{
+
+.textos-header h1 {
     font-size: 50px;
     color: aliceblue;
 }
-.textos-header h2{
+
+.textos-header h2 {
     font-size: 30px;
     font-weight: 300;
     color: aliceblue;
 }
+
 
 /* About us */
 
 main {
     background: rgb(243, 237, 237);
 }
+
 main .sobre-nosotros {
     padding: 30px 0 60px 0;
-    
 }
-.contenedor-sobre-nosotros{
+
+.contenedor-sobre-nosotros {
     display: flex;
     justify-content: space-between;
-    
 }
-.contenedor-sobre-nosotros img{
+
+.contenedor-sobre-nosotros img {
     border-radius: 0;
 }
-.imagen-about-us{
+
+.imagen-about-us {
     width: 40%;
     padding-right: 30px;
 }
-.sobre-nosotros .contenido-textos{
+
+.sobre-nosotros .contenido-textos {
     width: 48%;
 }
-.contenido-textos h3{
+
+.contenido-textos h3 {
     margin-bottom: 15px;
     margin-inline-start: 5px;
 }
-.contenido-textos h3 span{
+
+.contenido-textos h3 span {
     background: rgb(29, 8, 106);
     color: rgb(255, 255, 255);
     border-radius: 50%;
@@ -101,27 +121,33 @@ main .sobre-nosotros {
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
     margin-right: 5px;
 }
-.contenido-textos p{
+
+.contenido-textos p {
     padding: 0 0 30px 15px;
     font-weight: 300;
     text-align: justify;
 }
-.wave{
+
+.wave {
     position: absolute;
     bottom: 0px;
     width: 100%;
 }
+
+
 /*GALERIA*/
 
-.portafolio{
+.portafolio {
     background: rgb(243, 237, 237);
 }
-.galeria-puntos{
+
+.galeria-puntos {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.imagen-puntos{
+
+.imagen-puntos {
     width: 24%;
     margin-bottom: 10px;
     height: 200px;
@@ -130,98 +156,117 @@ main .sobre-nosotros {
     cursor: pointer;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
 }
-.imagen-puntos > img{
+
+.imagen-puntos>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
-.hover-galeria{
+
+.hover-galeria {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
+    font-size: smaller;
     transform: scale(0);
     background: rgba(9, 53, 197, 0.7);
-    transition: transform .5s;
+    transition: transform .7s;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.hover-galeria img{
+
+.hover-galeria img {
     width: 50px;
     border-radius: 50%;
 }
-.hover-galeria p{
+
+.hover-galeria p {
     color: aliceblue;
 }
-.imagen-puntos:hover .hover-galeria{
+
+.imagen-puntos:hover .hover-galeria {
     transform: scale(1);
 }
- /* Clientes */
 
- .usuarios-contenedor {
+
+/* Clientes */
+
+.usuarios-contenedor {
     background: rgb(243, 237, 237);
- }
- .cards {
-     display: flex;
-     justify-content: space-evenly;
- }
- .cards .card {
-     background: rgb(30, 8, 90);
-     display: flex;
-     width: 46%;
-     height: 200px;
-     align-items: center;
-     justify-content: space-evenly;
-     border-radius: 5px;
-     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
- }
- .cards .card img{
-     width: 100px;
-     height: 100px;
-     object-fit: cover;
-     border: 3px solid #fff;
-     border-radius: 50%;
-     display: block;
+}
 
- }
- .cards .card > .contenido-texto-card{
-    
+.tarjetas {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tarjetas .tarjeta {
+    background: rgb(30, 8, 90);
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.tarjetas .tarjeta img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.tarjetas .tarjeta>.contenido-texto-card {
     width: 60%;
     color: aliceblue;
- }
- .cards .card > .contenido-texto-card p{
-     font-weight: 300;
-     padding-top: 5px;
-    
- }
- /* Nuestro equipo */
+}
 
- .about-services {
+.tarjetas .tarjeta>.contenido-texto-card p {
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+
+/* Nuestro equipo */
+
+.about-services {
     background: rgb(243, 237, 237);
     padding-bottom: 30px;
- }
- .servicio-cont{
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
- }
- .servicio-indiv{
-     width: 28%;
-     text-align: center;
- }
-.servicio-indiv img{
+}
+
+.servicio-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-indiv {
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-indiv img {
     width: 90%;
 }
-.servicio-indiv h3{
+
+.servicio-indiv h3 {
     margin: 10px 0;
 }
-.servicio-indiv p{
+
+.servicio-indiv p {
     font-weight: 300;
     text-align: center;
 }
+
 
 /* Pie de pagina */
 
@@ -231,6 +276,7 @@ footer {
     margin: auto;
     overflow: hidden;
 }
+
 .contenedor-footer {
     display: flex;
     width: 90%;
@@ -238,37 +284,38 @@ footer {
     justify-content: space-evenly;
     padding-bottom: 50px;
     border-bottom: 1px solid rgb(92, 85, 85);
-
 }
-.contenedor-foo{
+
+.contenedor-foo {
     text-align: center;
 }
-.contenedor-foo h4{
+
+.contenedor-foo h4 {
     color: #fff;
     border-bottom: 3px solid #1A2980;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
-.contenedor-foo p{
+
+.contenedor-foo p {
     color: gray;
 }
 
-.social > a > img {
+.social>a>img {
     width: 48px;
     margin: 0 8px 0 0;
-
 }
 
-
-
-.titulo-final{
+.titulo-final {
     text-align: center;
     font-size: 24px;
     margin: 20px 0 0 0;
     color: gray;
 }
 
+
 /* Formularios */
+
 
 /* formulario de contacto */
 
@@ -277,16 +324,16 @@ footer {
     width: 50%;
     display: block;
     border: solid 2px;
-    border-radius: 20px; 
+    border-radius: 20px;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
 }
 
 label {
-    display:block;
-    margin-top:20px;
-    letter-spacing:1px;
+    display: initial;
+    margin-top: 20px;
+    letter-spacing: 1px;
 }
- 
+
 .cabecera {
     height: 100px;
     border-top-right-radius: 20px;
@@ -294,107 +341,114 @@ label {
     display: flex;
     justify-content: space-evenly;
     color: #ffffff;
-    font-family:Arial;
+    font-family: Arial;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
-    
-    
 }
-.cabecera >h1 {
+
+.cabecera>h1 {
     margin: auto;
 }
 
- 
 form {
-    margin:0 auto;
-    width:400px;
-    
+    margin: 0 auto;
+    width: 400px;
 }
- 
-input, textarea, select {
-    width:380px;
-    height:27px;
-    background:#fafbfc;
-    border:1px solid #0e0d0d;
-    padding:10px;
-    margin-top:5px;
-    font-size:10px rgb(4, 4, 4);
-    color:#0e0d0d;
+
+input,
+textarea,
+select {
+    width: 380px;
+    height: 27px;
+    background: #fafbfc;
+    border: 1px solid #0e0d0d;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 10px rgb(4, 4, 4);
+    color: #0e0d0d;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
 }
- 
+
 textarea {
-    height:150px;
+    height: 150px;
 }
- 
+
 #submit {
-    width:85px;
-    height:35px;
+    width: 85px;
+    height: 35px;
     background: rgb(28, 79, 189);
-    border:solid 1px rgb(10, 10, 10);
-    margin-top:20px;
+    border: solid 1px rgb(10, 10, 10);
+    margin-top: 20px;
     margin-bottom: 50px;
-    cursor:pointer;
+    cursor: pointer;
     color: rgb(255, 255, 255);
     border-radius: 20px;
-
 }
 
+
 /* formulario de reserva */
+
 .principal-reserva {
     margin: 10px 0 0 10px;
     width: 50%;
     display: block;
     border: solid 2px;
-    border-radius: 20px; 
+    border-radius: 20px;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
 }
+
+.form-reserva input {
+    margin-right: 30px;
+}
+
+.form-reserva select {
+    margin-right: 30px;
+}
+
+.form-reserva label {
+    margin-right: 30px;
+}
+
 #estadia {
-    width:38px;
-    height:27px;
-    
+    width: 38px;
+    height: 27px;
 }
 
 
 /* Responsive */
 
-@media screen and (max-width: 900px){
-    header{
+@media screen and (max-width: 900px) {
+    header {
         background-position: center;
     }
-    .contenedor-sobre-nosotros{
+    .contenedor-sobre-nosotros {
         flex-direction: column;
         justify-content: center;
-        align-items: center ;
+        align-items: center;
     }
-    .sobre-nosotros .contenido-textos{
+    .sobre-nosotros .contenido-textos {
         width: 90%;
     }
-    .imagen-about-us{
+    .imagen-about-us {
         width: 90%;
     }
     /* Galería */
-
-    .imagen-puntos{
+    .imagen-puntos {
         width: 44%;
     }
-
     /* Clientes */
-
     .cards {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .cards .card{
+    .cards .card {
         width: 90%;
     }
     .cards .card:first-child {
         margin-bottom: 30px;
     }
-
     /* Servicios */
-
-    .servicio-cont{
+    .servicio-cont {
         flex-direction: column;
         justify-content: center;
     }
@@ -402,33 +456,33 @@ textarea {
         width: 100%;
         text-align: center;
     }
-    .servicio-indiv:nth-child(1), .servicio-indiv:nth-child(2){
+    .servicio-indiv:nth-child(1),
+    .servicio-indiv:nth-child(2) {
         margin-bottom: 60px;
     }
     .servicio-indiv img {
         width: 90%;
     }
     /* social */
-
     .social {
         margin: auto;
         justify-content: center;
-        align-items: center ;
+        align-items: center;
     }
-
     /* formularios */
-
     /* Formulario de contacto */
-
     .principal-contacto {
-       width: 90%;
+        width: 90%;
     }
     .cabecera {
         flex-direction: column;
         justify-content: center;
         margin-bottom: 10px;
     }
-    input, textarea, label, select {
+    input,
+    textarea,
+    label,
+    select {
         flex-direction: column;
         justify-content: center;
         justify-content: center;
@@ -441,7 +495,6 @@ textarea {
         align-items: center;
     }
     /* formulario reserva */
-
     .principal-reserva {
         width: 70%;
     }
@@ -451,9 +504,6 @@ textarea {
         width: 50%;
         margin: 0px 0 5px 10px;
     }
-    
-    
-      
 }
 
 @media screen and (max-width: 500px) {
@@ -461,7 +511,7 @@ textarea {
         text-align: center;
         padding: 30px 0 0 0;
     }
-    nav > a {
+    nav>a {
         margin-right: 5px;
     }
     .textos-header {
@@ -470,9 +520,7 @@ textarea {
     .textos-header h2 {
         font-size: 20px;
     }
-
     /* Abaout us */
-
     .imagen-about-us {
         margin-bottom: 60px;
         width: 99%;
@@ -480,15 +528,11 @@ textarea {
     .sobre-nosotros .contenido-textos {
         width: 95%;
     }
-
     /* Galería */
-
     .imagen-puntos {
         width: 95%;
     }
-
     /* Clientes */
-
     .cards .card {
         height: 450px;
         display: flex;
@@ -500,7 +544,6 @@ textarea {
         height: 90px;
     }
     /* Pie de pagina */
-
     .contenedor-footer {
         flex-direction: column;
         border: none;
@@ -521,4 +564,3 @@ textarea {
         font-size: 20px;
     }
 }
-
